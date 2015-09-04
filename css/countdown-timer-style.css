@@ -1,0 +1,67 @@
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700);
+
+/*
+  $blueColor: #003e68
+  $redColor: #c41230
+*/
+
+#pageTimer {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#pageTimer h2 {
+  color: #003e68;
+}
+
+#pageTimer .page-timer-content {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  font-family: 'Droid Serif', serif;
+}
+
+#pageTimer .page-timer-content > div {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  flex-basis: 100px;
+  text-align: center;
+  border: 1px solid #003e68;
+  color: #c41230;
+  font-weight: bold;
+  margin: 0 1px;
+  padding-bottom: 14px;
+  font-size: 24px;
+  background: #fff;
+}
+
+#pageTimer .page-timer-content > div::before {
+  content: "";
+  width: 100%;
+  display: block;
+
+  padding: 7px 0;
+  margin-bottom: 14px;
+  font-size: 16px;
+  font-weight: normal;
+
+  color: #fff;
+  background: #003e68;
+}
+
+#pageTimer .page-timer-content > div.months::before {
+  content: "Months";
+}
+
+#pageTimer .page-timer-content > div.days::before {
+  content: "Days";
+}
+
+#pageTimer .page-timer-content > div.hours::before {
+  content: "Hours";
+}
+
+#pageTimer .page-timer-content > div.minutes::before {
+  content: "Minutes";
+}
